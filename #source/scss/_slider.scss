@@ -1,0 +1,78 @@
+.slider {
+  position: relative;
+}
+.arrows {
+}
+
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+.slick-dots {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.slick-dots li {
+}
+.slick-dots button {
+  background-color: transparent;
+  width: 64px;
+  height: 56px;
+  border-radius: 16px;
+  border: 1px solid #1973d3;
+  color: #1973d3;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  @media screen and (max-width: 1024px) {
+    width: 56px;
+    height: 48px;
+  }
+}
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #1973d3;
+  color: #fff;
+}
