@@ -143,32 +143,48 @@ enableSubmitButton(document.querySelector(".signUP-card form"));
 enableSubmitButton(document.querySelector(".logIN-card form"));
 enableSubmitButton(document.querySelector(".resetPassword-card form"));
 
+const inputs = document.querySelectorAll(".code-inputs input");
+
+inputs.forEach((input, index) => {
+  input.addEventListener("input", () => {
+    if (input.value.length === 1 && index < inputs.length - 1) {
+      inputs[index + 1].focus();
+    }
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Backspace" && index > 0 && input.value === "") {
+      inputs[index - 1].focus();
+    }
+  });
+});
+
 //__________________________ADVERTISING_________________________//
 
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    let popup = document.querySelector(".advertising-wrapper");
-    let closeButton = document.querySelector(".advertising-close-timer");
-    let timerSpan = closeButton.querySelector(".timer");
-    let countdown = 5;
+// document.addEventListener("DOMContentLoaded", function () {
+//   setTimeout(function () {
+//     let popup = document.querySelector(".advertising-wrapper");
+//     let closeButton = document.querySelector(".advertising-close-timer");
+//     let timerSpan = closeButton.querySelector(".timer");
+//     let countdown = 5;
 
-    popup.classList.add("show");
+//     popup.classList.add("show");
 
-    let timerInterval = setInterval(function () {
-      countdown--;
-      timerSpan.textContent = countdown;
+//     let timerInterval = setInterval(function () {
+//       countdown--;
+//       timerSpan.textContent = countdown;
 
-      if (countdown === 0) {
-        clearInterval(timerInterval);
-        closeButton.classList.remove("disabled");
-        closeButton.classList.add("enabled");
-      }
-    }, 1000);
+//       if (countdown === 0) {
+//         clearInterval(timerInterval);
+//         closeButton.classList.remove("disabled");
+//         closeButton.classList.add("enabled");
+//       }
+//     }, 1000);
 
-    closeButton.addEventListener("click", function () {
-      if (countdown === 0) {
-        popup.classList.remove("show");
-      }
-    });
-  }, 5000);
-});
+//     closeButton.addEventListener("click", function () {
+//       if (countdown === 0) {
+//         popup.classList.remove("show");
+//       }
+//     });
+//   }, 5000);
+// });
