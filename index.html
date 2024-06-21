@@ -433,7 +433,7 @@
         <div class="close"><img src="./img/close.svg" alt="" /></div>
         <p class="title">Log in</p>
         <form action="/submit_signup" method="post">
-          <div class="input-group">
+          <div class="input-group error">
             <label for="email">Enter email</label>
             <input
               type="email"
@@ -442,6 +442,7 @@
               placeholder="Email"
               required
             />
+            <div class="error-text">The Email is required</div>
           </div>
           <div class="input-group">
             <label for="password">Enter password</label>

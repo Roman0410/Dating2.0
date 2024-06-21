@@ -332,6 +332,14 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    &.error {
+      input {
+        background: #8c4444 !important;
+      }
+      .error-text {
+        display: block;
+      }
+    }
     label {
       display: block;
       color: #fbfbfb;
@@ -347,6 +355,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      display: none;
     }
     input {
       width: 100%;
