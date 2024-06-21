@@ -204,6 +204,9 @@
       &:hover {
         background: #4c4c52;
       }
+      &.current {
+        background: #838383;
+      }
     }
   }
   .next,
