@@ -1,7 +1,3 @@
-Fancybox.bind("[data-fancybox]", {
-  Thumbs: false,
-});
-$(".beforeAfter  .slide").twentytwenty();
 //__________________________HEADER__________________________//
 
 $(".burger-menu").click(function () {
