@@ -161,30 +161,30 @@ inputs.forEach((input, index) => {
 
 //__________________________ADVERTISING_________________________//
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   setTimeout(function () {
-//     let popup = document.querySelector(".advertising-wrapper");
-//     let closeButton = document.querySelector(".advertising-close-timer");
-//     let timerSpan = closeButton.querySelector(".timer");
-//     let countdown = 5;
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    let popup = document.querySelector(".advertising-wrapper");
+    let closeButton = document.querySelector(".advertising-close-timer");
+    let timerSpan = closeButton.querySelector(".timer");
+    let countdown = 5;
 
-//     popup.classList.add("show");
+    popup.classList.add("show");
 
-//     let timerInterval = setInterval(function () {
-//       countdown--;
-//       timerSpan.textContent = countdown;
+    let timerInterval = setInterval(function () {
+      countdown--;
+      timerSpan.textContent = countdown;
 
-//       if (countdown === 0) {
-//         clearInterval(timerInterval);
-//         closeButton.classList.remove("disabled");
-//         closeButton.classList.add("enabled");
-//       }
-//     }, 1000);
+      if (countdown === 0) {
+        clearInterval(timerInterval);
+        closeButton.classList.remove("disabled");
+        closeButton.classList.add("enabled");
+      }
+    }, 1000);
 
-//     closeButton.addEventListener("click", function () {
-//       if (countdown === 0) {
-//         popup.classList.remove("show");
-//       }
-//     });
-//   }, 5000);
-// });
+    closeButton.addEventListener("click", function () {
+      if (countdown === 0) {
+        popup.classList.remove("show");
+      }
+    });
+  }, 5000);
+});
