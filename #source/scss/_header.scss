@@ -4,7 +4,7 @@
   width: 100%;
   border-bottom: 1px solid #616166;
   background: #252528;
-  z-index: 1000;
+  z-index: 5000;
   transition: all 0.2s linear;
   &.hidden {
     transform: translateY(-100%);
