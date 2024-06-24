@@ -4,7 +4,7 @@
   width: 100%;
   border-bottom: 1px solid #616166;
   background: #252528;
-  z-index: 9999;
+  z-index: 1000;
   transition: all 0.2s linear;
   &.hidden {
     transform: translateY(-100%);
@@ -88,6 +88,7 @@
     width: 40px;
     height: 40px;
     border-radius: 8px;
+    cursor: pointer;
   }
   .header-burger {
     display: none;
@@ -234,7 +235,7 @@
       font-size: 16px;
       font-weight: 400;
       line-height: normal;
-      background-image: url("../../img/select.svg");
+      background-image: url("../img/select.svg");
       background-repeat: no-repeat;
       background-position: right 0.7rem top 50%;
       background-size: 0.95rem auto;

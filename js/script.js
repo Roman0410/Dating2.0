@@ -1,3 +1,5 @@
+Fancybox.bind("[data-fancybox]", {});
+
 //__________________________HEADER__________________________//
 
 $(".burger-menu").click(function () {

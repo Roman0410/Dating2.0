@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dating</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header-body">
+        <div class="left">
+          <a href="index.html" class="btn red">
+            <img src="./img/tabler_cherry-filled.svg" alt="" />
+          </a>
+        </div>
+        <a href="index.html" class="logo">Logo</a>
+        <div class="burger-menu red flex">
+          <img src="./img/burger.svg" alt="" />
+        </div>
+        <div class="header-menu">
+          <div class="head">
+            <div class="user-mail">igozenegger@gmail.com</div>
+            <div class="close red flex">
+              <img src="./img/close.svg" alt="" />
+            </div>
+          </div>
+          <div class="coins">
+            <img src="./img/coins.svg" alt="" />
+            <span>99999999</span>
+            <div class="add-coins flex red">
+              <img src="./img/plus.svg" alt="" />
+            </div>
+          </div>
+          <div class="search-container">
+            <form action="/search" method="get">
+              <input
+                type="text"
+                name="query"
+                class="search-input"
+                placeholder="Search"
+              />
+              <button type="submit" class="search-button">
+                <img src="./img/search.svg" alt="Search" />
+              </button>
+            </form>
+          </div>
+          <div class="form-container">
+            <div class="form-group">
+              <label for="category">Show me:</label>
+              <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+              </select>
+            </div>
+            <div class="zip-distance-group">
+              <input
+                type="text"
+                id="zip"
+                name="zip"
+                class="zip-input"
+                placeholder="ZIP code"
+              />
+              <select id="distance" name="distance">
+                <option value="all-miles">All miles</option>
+                <option value="10-miles">10 miles</option>
+                <option value="50-miles">50 miles</option>
+                <option value="100-miles">100 miles</option>
+              </select>
+            </div>
+          </div>
+          <div class="pages">
+            <div class="pages-list">
+              <a href="" class="pages-item red">
+                <p class="name">Subscription</p>
+                <img src="./img/sub.svg" alt="" class="icon" />
+              </a>
+              <a href="" class="pages-item red">
+                <p class="name">Earn with us</p>
+                <img src="./img/earn.svg" alt="" class="icon" />
+              </a>
+              <a href="" class="pages-item red">
+                <p class="name">Top vote</p>
+                <img src="./img/top.svg" alt="" class="icon" />
+              </a>
+              <a href="" class="pages-item red">
+                <p class="name">My post</p>
+                <img src="./img/post.svg" alt="" class="icon" />
+              </a>
+              <a href="" class="pages-item red">
+                <p class="name">Favorites</p>
+                <img src="./img/favorite.svg" alt="" class="icon" />
+              </a>
+              <a href="" class="pages-item red">
+                <p class="name">Settings</p>
+                <img src="./img/settings.svg" alt="" class="icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="profile">
+      <div class="container">
+        <div class="left-side">
+          <div class="head-porfile verified">
+            <div class="img-card">
+              <img src="./img/user1.png" alt="" />
+              <div class="likes">
+                <div class="btn red"><img src="./img/like.svg" alt="" /></div>
+                <div class="likes-count">999</div>
+              </div>
+            </div>
+            <div class="userMain">
+              <p class="name">Kafie, 31</p>
+              <p class="city">Miami, FL</p>
+            </div>
+          </div>
+          <div class="user-info-list">
+            <div class="user-info-item">
+              <span class="type">Phone:</span>
+              <p class="info">@dobi</p>
+            </div>
+            <div class="user-info-item">
+              <span class="type">Instagram:</span>
+              <p class="info">@dobi</p>
+            </div>
+            <div class="user-info-item">
+              <span class="type">Telegram:</span>
+              <p class="info">@dobi</p>
+            </div>
+            <div class="user-info-item">
+              <span class="type">Snapchat:</span>
+              <p class="info">@dobi</p>
+            </div>
+            <div class="user-info-item">
+              <span class="type">OnlyFans:</span>
+              <p class="info">@dobi</p>
+            </div>
+            <div class="user-info-item">
+              <span class="type">Email:</span>
+              <p class="info">@dobi</p>
+            </div>
+          </div>
+          <div class="user-location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727918.5362564916!2d-74.24289700169318!3d40.67870300966533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1719235826027!5m2!1suk!2sua"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="description">
+            The palette consists of a light color, a dark color, main brand
+            color and two highlight colors. The palette consists of a light
+            color, a dark color.
+          </div>
+        </div>
+        <div class="user-photo-list">
+          <a
+            href="./img/user1.png"
+            data-fancybox="user-photos"
+            class="user-photo-item"
+          >
+            <img src="./img/user1.png" alt="" />
+          </a>
+          <a
+            href="./img/user2.png"
+            data-fancybox="user-photos"
+            class="user-photo-item"
+          >
+            <img src="./img/user2.png" alt="" />
+          </a>
+          <div class="user-photo-item">
+            <div class="subscribe">
+              <p>Subscribe, to get full access!</p>
+              <a href="#" class="btn red">Subscribe</a>
+            </div>
+            <img src="./img/user3.png" alt="" />
+          </div>
+          <div class="user-photo-item">
+            <div class="subscribe">
+              <p>Subscribe, to get full access!</p>
+              <a href="#" class="btn red">Subscribe</a>
+            </div>
+            <img src="./img/user4.png" alt="" />
+          </div>
+        </div>
+        <div class="other-user-list">
+          <a href="profile.html" class="other-user-item verified">
+            <div class="img-card">
+              <img src="./img/user1.png" alt="" />
+              <div class="likes">
+                <div class="btn red"><img src="./img/like.svg" alt="" /></div>
+                <div class="likes-count">999</div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="name">Kafie, 31</p>
+              <p class="city">Miami, FL</p>
+            </div>
+          </a>
+          <a href="profile.html" class="other-user-item">
+            <div class="img-card">
+              <img src="./img/user1.png" alt="" />
+              <div class="likes">
+                <div class="btn red"><img src="./img/like.svg" alt="" /></div>
+                <div class="likes-count">999</div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="name">Kafie, 31</p>
+              <p class="city">Miami, FL</p>
+            </div>
+          </a>
+          <a href="profile.html" class="other-user-item verified">
+            <div class="img-card">
+              <img src="./img/user1.png" alt="" />
+              <div class="likes">
+                <div class="btn red"><img src="./img/like.svg" alt="" /></div>
+                <div class="likes-count">999</div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="name">Kafie, 31</p>
+              <p class="city">Miami, FL</p>
+            </div>
+          </a>
+          <a href="profile.html" class="other-user-item verified">
+            <div class="img-card">
+              <img src="./img/user1.png" alt="" />
+              <div class="likes">
+                <div class="btn red"><img src="./img/like.svg" alt="" /></div>
+                <div class="likes-count">999</div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="name">Kafie, 31</p>
+              <p class="city">Miami, FL</p>
+            </div>
+          </a>
+          <a href="profile.html" class="other-user-item verified">
+            <div class="img-card">
+              <img src="./img/user1.png" alt="" />
+              <div class="likes">
+                <div class="btn red"><img src="./img/like.svg" alt="" /></div>
+                <div class="likes-count">999</div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="name">Kafie, 31</p>
+              <p class="city">Miami, FL</p>
+            </div>
+          </a>
+          <a href="profile.html" class="other-user-item">
+            <div class="img-card">
+              <img src="./img/user1.png" alt="" />
+              <div class="likes">
+                <div class="btn red"><img src="./img/like.svg" alt="" /></div>
+                <div class="likes-count">999</div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="name">Kafie, 31</p>
+              <p class="city">Miami, FL</p>
+            </div>
+          </a>
+          <a href="profile.html" class="other-user-item verified">
+            <div class="img-card">
+              <img src="./img/user1.png" alt="" />
+              <div class="likes">
+                <div class="btn red"><img src="./img/like.svg" alt="" /></div>
+                <div class="likes-count">999</div>
+              </div>
+            </div>
+            <div class="card">
+              <p class="name">Kafie, 31</p>
+              <p class="city">Miami, FL</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <a class="footer-link"
+          ><img src="./img/help.svg" alt="question mark" />Here is info</a
+        >
+        <a class="footer-link"
+          ><img src="./img/more.svg" alt="plane" />Here is More</a
+        >
+      </div>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <script src="./js/just-validate.production.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
